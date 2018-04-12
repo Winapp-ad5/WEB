@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IMC</title>
+</head>
+
+<body>
+	<h1>Calcular o IMC</h1><hr>
+	<script language="javascript">
+	var peso = eval(prompt("Insira o peso: ","0"));
+		var altura = eval (prompt("Insira a altura:","0"));
+		var imc=(peso/(altura*altura));
+		if(imc>25){
+			alert("Com o IMC "+imc.toFixed(2)+" Você está Gordinho");
+		}else{
+			alert("Com o IMC "+imc.toFixed(2)+" Você está Magrinho");
+		}
+	</script>
+</body>
+</html>
