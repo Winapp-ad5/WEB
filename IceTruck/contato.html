@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Turismo</title>
+<style>
+	
+	*, *:after, *:before{
+  	margin: 0;
+ 	padding: 0;
+ 	font-family: 'Lora', san-sans-serif;
+	
+	}
+	
+	.cabecalho{
+		height: 150px;
+		background-color:#FFFFFF;
+		background-image: url(img/cabecalho.png);
+	}
+	
+	.menu{
+		width: 1024px;
+		height: 100px;
+		text-align: center;
+		line-height: 100px;
+	    margin-left:420px;
+		padding-top: 60px;
+	}
+	
+	#logo{
+		width: 200px;
+		height: 100px;
+	    margin-left:450px;
+		float: left;
+		padding-top: 50px;
+	}
+	
+	
+	.container{
+		height: 750px;
+		margin-bottom: 30px;
+
+	}
+	
+	.painel{
+		width: 1024px;
+		height: 750px;
+		background-color:darkgray;
+		margin-left:420px;
+
+	}
+
+
+    #box1{
+		width: 280px;
+		height: 690px;
+		background-color:purple;
+        float: left;
+        margin-top: 30px;
+        margin-left: 20px;
+	}
+
+	#box2{
+		width: 680px;
+		height: 690px;
+		background-color:purple;
+		float: left;
+		margin-top: 30px;
+		margin-left: 20px;
+	}
+
+	#box3{
+		width: 980px;
+		height: 140px;
+		background-color:purple;
+	    margin-left: 20px;
+		margin-top: 25px;
+		float: left;
+	}
+
+	
+	.rodape{
+		height: 100px;
+		background-color:#f37430;
+		text-align: center;
+		color: white;
+	}
+	
+	.rodape p{
+
+		color: white;
+		font-size: 18px;
+		padding-top: 20px;
+	}
+	
+	
+	.menu ul li{
+	display:inline;
+	padding: 10px 20px;
+	color: brown;
+	font-size: 15px;
+	}
+	
+	h1{
+		color: white;
+	}
+	
+	label{
+		color: white;
+	}
+	
+	a{
+		color: #f37430;
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: none;
+		background-color: #f37430;
+		color: white;
+	}
+	
+	</style>	
+</head>
+
+<body>
+	<div class="cabecalho">
+		<div id="logo"><img src="img/icelogo.png"></div>
+		<div class="menu">
+		<ul>
+		<li><a href="index.html" target="_self">HOME</a></li>
+			<li>|</li>
+		<li><a href="sobre.html" target="_self">QUEM SOMOS</a></li>
+			<li>|</li>
+		<li><a href="servicos.html" target="_self">CATÁLOGO</a></li>
+			<li>|</li>
+		<li><a href="contato.html" target="_self">CONTATO</a></li>
+	</ul>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="painel">
+
+				<div id="box1"> </div>
+				<div id="box2">
+					<h1>Fale Conosco</h1>
+					<form>
+						<label>Nome:</label><input type="text" size="45" maxlength="15"><br>
+						<label>E-mail:</label><input type="text" size="45" maxlength="15"><br>
+						<label>Sexo: Masculino <input type="radio" name="sexo">Feminino<input type="radio" name="sexo"></label><br>
+						<label>Preferencia Musical: <br>
+						Pagode <input type="checkbox" id="pagode">
+						Clássica <input type="checkbox">
+						MPB <input type="checkbox">
+						Rock <input type="checkbox"><br>
+						Quem é você: <input type="file"><br>
+						<select>
+							<option>São Paulo</option>
+							<option>Rio de Janeiro</option>
+							<option>Minas Gerais</option>
+						</select><br>
+						Nascimento:
+						<select>
+							<option selected>Dia</option>
+							<option>	1	</option>
+							<option>	2	</option>
+							<option>	3	</option>
+							<option>	4	</option>
+							<option>	5	</option>
+							<option>	6	</option>
+							<option>	7	</option>
+							<option>	8	</option>
+							<option>	9	</option>
+							<option>	10	</option>
+							<option>	11	</option>
+							<option>	12	</option>
+							<option>	13	</option>
+							<option>	14	</option>
+							<option>	15	</option>
+							<option>	16	</option>
+							<option>	17	</option>
+							<option>	18	</option>
+							<option>	19	</option>
+							<option>	20	</option>
+							<option>	21	</option>
+							<option>	22	</option>
+							<option>	23	</option>
+							<option>	24	</option>
+							<option>	25	</option>
+							<option>	26	</option>
+							<option>	27	</option>
+							<option>	28	</option>
+							<option>	29	</option>
+							<option>	30	</option>
+							<option>	31	</option>
+
+						</select>
+							
+							<select>
+								<option selected>Mes</option>
+								<option>	Janeiro	</option>
+							<option>	Fevereiro	</option>
+							<option>	Março	</option>
+							<option>	Abril	</option>
+							<option>	Maio	</option>
+							<option>	Junho	</option>
+							<option>	Julho	</option>
+							<option>	Agosto	</option>
+							<option>	Setembro	</option>
+							<option>	Outubro	</option>
+							<option>	Novembro	</option>
+							<option>	Dezembro	</option>
+
+							</select>
+							</label>
+						<br>
+						Insira um Comentário:<br>
+						<textarea cols="20" rows="20">Insira seu comentário...</textarea>
+						<input type="submit" value="Enviar">
+						<input type="reset" value="Apagar">
+					</form> 
+			</div>
+
+	</div>
+	</div>
+
+	<div class="rodape">
+		<p>Pedro Henrique - Centro Universitário Senac / Web - Análise e Desenvolvimento de Sistemas  <br><br>
+			© Todos os Direitos Reservados - 2018.
+			</p>
+	</div>
+	
+</body>
+</html>
